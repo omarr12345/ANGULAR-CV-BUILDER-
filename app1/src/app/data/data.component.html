@@ -1,0 +1,70 @@
+<div class="form">
+    <fieldset formGroupName="data">
+        <div class="dataHead">
+            <h6>CONTACT INFORMATION</h6>
+        </div>
+
+        <div class="row">
+
+
+
+
+            <div class="col-md-4">
+
+                <img src="../../assets/img/Fingers.jpg" class="img-fluid" id="profileImg"
+                    style="display: inline-block;" />
+
+
+            </div>
+            <div class="col-md-8">
+
+                <h5 id="profileTitle" style="margin-bottom: 10px;">Profile Photo</h5>
+
+
+
+                <span> <input formControlName="profileImg" type="file" name="pic" id="uploadImg"
+                        accept=".jpg,.jpeg,.png|image/*"></span>
+
+
+                <br>
+                <br>
+
+
+                <span><button class="form-danger" id="roundPhoto">Round Photo</button></span>
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+        <hr>
+
+
+
+        <input type="text" formControlName="Fname" class="form-control" placeholder="First Name" maxlength="30"
+            value="Omar">
+        <small>e.g Omar Mostaffa</small>
+        <input formControlName="Email" name="mail" class="form-control" placeholder="Email" type="email">
+        <small>e.g Omar.12345@gmail.com</small>
+        <input type="text" formControlName="Address" name="address" class="form-control" placeholder="Address">
+        <small>e.g 18-EL50 ST zahraa ELmaadi</small>
+        <input formControlName="Phone" name="phone" class="form-control" placeholder="Phone" maxlength="11">
+        <small>e.g 01119489093</small>
+
+
+
+        <input type="submit" value="Next"
+            style="color: white; background-color: darkblue; float: right; border-radius:50px ; padding: 6px 15px;">
+
+
+    </fieldset>
+
+</div>

@@ -1,0 +1,456 @@
+.nav-item {
+  margin: 20px 0px 20px 150px;
+  transform: scaleY(1.5) skew(-25deg);
+  font-family: "PT Serif", serif;
+  font-size: 15px;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.rotateDiv {
+  background-color: #e74e93;
+  transform: skew(-25deg);
+  width: 20px;
+  position: absolute;
+  top: 27px;
+  left: 161px;
+  padding-left: 7px;
+  font-size: 18px;
+}
+
+.nav-link {
+  z-index: 10000;
+  padding-left: 20px;
+  font-family: "PT Serif", serif;
+}
+
+.Login {
+  transform: scaleY(1.3);
+  position: absolute;
+  top: 25px;
+  left: 70%;
+  font-weight: bold;
+  transition: all 1s;
+  font-family: "PT Serif", serif;
+  color: #e74e93;
+}
+
+.nav li a {
+  transition: all 1s;
+}
+
+.nav li a:hover {
+  top: 100px;
+  color: #e74e93;
+  cursor: pointer;
+}
+
+.Signup {
+  transform: scaleY(1.5);
+  position: absolute;
+  top: 25px;
+  left: 80%;
+  font-weight: bold;
+  color: #e74e93;
+  font-family: "PT Serif", serif;
+}
+
+.Login a {
+  text-decoration: none;
+}
+
+.Signup a {
+  text-decoration: none;
+}
+
+.nav {
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */
+  background-color: white;
+  z-index: 100000000;
+  height: 80px;
+}
+
+.welcome {
+  background-color: #f2f7fa;
+  position: relative;
+  width: 100%;
+  height: 1700px;
+  text-align: center;
+  font-family: "PT Serif", serif;
+}
+
+.Welcometext {
+  position: absolute;
+  top: 5%;
+  width: 500px;
+  left: 320px;
+  text-align: center;
+  width: 700px;
+  z-index: 1000000;
+  font-family: "PT Serif", serif;
+}
+
+.Welcometext h1 {
+  transform: skew(-10deg);
+  color: #214761;
+  font-family: "Cooper Hewitt", sans-serif;
+  font-weight: 900;
+  padding-right: 160px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  width: 800px;
+  font-family: "PT Serif", serif;
+}
+
+.Welcometext p {
+  font-size: 20px;
+  transform: skew(-20deg);
+  padding-bottom: 20px;
+  font-family: "PT Serif", serif;
+}
+
+.Welcometext a {
+  border: solid 1px black;
+  margin: 10px 20px 40px 10px;
+  color: black;
+  text-decoration: none;
+  padding: 17px 25px 14px 40px;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 4px;
+  box-shadow: none;
+  text-transform: uppercase;
+  transition: all 1s;
+  font-family: "PT Serif", serif;
+}
+
+.Welcometext a:hover {
+  background-color: #ff6767;
+}
+
+.text {
+  padding: 50px;
+  width: 800px;
+  position: absolute;
+  left: -20px;
+}
+
+.Benefits {
+  position: absolute;
+  top: 530px;
+  left: 0px;
+  width: 100%;
+  height: 330px;
+  background-color: #e5edf2;
+  z-index: 10000;
+  float: left;
+  font-family: "PT Serif", serif;
+}
+
+.fstBenefit {
+  padding: 30px;
+  text-align: right;
+}
+
+.scdBenefit {
+  padding: 30px;
+  text-align: right;
+}
+
+.trdBenefit {
+  padding: 30px;
+  text-align: left;
+}
+
+.fthBenefit {
+  padding: 30px;
+  text-align: left;
+}
+
+.leftBenefits {
+  float: left;
+}
+
+.rightBenefits {
+  float: right;
+}
+
+.Benefits .fas {
+  font-size: 20px;
+  border-radius: 50%;
+  color: lightgray;
+  border: solid 2px;
+  padding: 5px;
+}
+
+.Benefits .far {
+  font-size: 20px;
+  border-radius: 50%;
+  color: lightgrey;
+  border: solid 2px;
+  padding: 5px;
+}
+
+.benefits i {
+  font-size: 20px;
+  border-radius: 50%;
+  color: red;
+  border: solid 2px;
+  padding: 5px;
+}
+
+.Benefits h4 {
+  color: #214761;
+}
+
+.Benefits span {
+  font-weight: 700;
+  color: #2298e9;
+  transform: skew(20deg);
+  font-size: 20px;
+}
+
+.carouselImages {
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  margin-right: 20px;
+  transition: all 3s;
+}
+
+.Slider {
+  position: absolute;
+  top: 900px;
+  left: 100px;
+}
+
+.sliderType {
+  margin-bottom: 200px;
+}
+
+.sliderType h2 {
+  width: 700px;
+  color: #214761;
+  font-size: 38px;
+  line-height: 45px;
+  text-align: center;
+  font-weight: 700;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  transform: skew(-10deg);
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 200px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.sliderType a {
+  border: solid 1px #9aa8b1;
+  padding: 8px 20px;
+  margin: 10px;
+  text-decoration: none;
+  color: #9aa8b1;
+  transition: all 1s;
+  font-size: 16px;
+  color: #193651;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.sliderType a:hover {
+  border: solid 2px;
+  font-weight: bold;
+}
+
+.sliderLinks {
+  position: absolute;
+  left: 330px;
+}
+
+.carouselImages:hover {
+  width: 250px;
+  height: 400px;
+  left: 10px;
+}
+
+.hints {
+  width: 100%;
+  height: 300px;
+  background-color: #214761;
+  border-top: none;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.hints h5 {
+  font-weight: bold;
+}
+
+.container {
+  padding-top: 20px;
+}
+
+.copyRights {
+  height: 40px;
+  width: 100%;
+  background-color: #1f2b33;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 10px;
+  font-family: "PT Serif", serif;
+}
+
+#sliderImages {
+  position: absolute;
+  left: 0px;
+  width: 1127px;
+
+  overflow: hidden;
+}
+
+#benefitsImg {
+  height: 330px;
+  width: 300px;
+}
+@media screen and (max-width: 1025px) and (min-width: 768px) {
+  .nav {
+    width: 100%;
+    height: 80px;
+  }
+  .welcome {
+    width: 110%;
+    height: 1500px;
+  }
+
+  .Welcometext {
+    left: 200px;
+  }
+
+  .Welcometext h1 {
+    font-weight: 500;
+    font-size: 25px;
+  }
+
+  #benefitsImg {
+    width: 250px;
+    height: 280px;
+    margin-top: 25px;
+  }
+
+  .fstBenefit,
+  .scdBenefit,
+  .trdBenefit,
+  .fthBenefit {
+    width: 400px;
+  }
+
+  .sliderType h2 {
+    margin-left: 100px;
+    font-size: 25px;
+  }
+
+  .sliderLinks {
+    left: 230px;
+  }
+
+  .hints {
+    width: 1127px;
+    padding-left: 100px;
+  }
+
+  .copyRights {
+    width: 100%;
+    width: 1127px;
+  }
+
+  .carouselImages {
+    width: 150px;
+    height: 150px;
+  }
+
+  .Welcometext p {
+    font-size: 15px;
+  }
+
+  #googleButton,
+  #chooseButton {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 769px) and (min-width: 425px) {
+  .nav {
+    width: 100%;
+    height: 80px;
+  }
+  .welcome {
+    width: 1127px;
+    height: 1500px;
+  }
+
+  .Welcometext {
+    left: 200px;
+  }
+
+  .Welcometext h1 {
+    font-weight: 500;
+    font-size: 25px;
+  }
+
+  #benefitsImg {
+    width: 250px;
+    height: 280px;
+    margin-top: 25px;
+  }
+
+  .fstBenefit,
+  .scdBenefit,
+  .trdBenefit,
+  .fthBenefit {
+    width: 400px;
+  }
+
+  .sliderType h2 {
+    margin-left: 100px;
+    font-size: 25px;
+  }
+
+  .sliderLinks {
+    left: 230px;
+  }
+
+  .hints {
+    width: 1127px;
+    padding-left: 0px;
+  }
+
+  .copyRights {
+    width: 100%;
+    width: 1127px;
+  }
+
+  .carouselImages {
+    width: 150px;
+    height: 150px;
+  }
+
+  .Welcometext p {
+    font-size: 15px;
+  }
+
+  #googleButton,
+  #chooseButton {
+    font-size: 13px;
+  }
+}

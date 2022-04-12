@@ -1,0 +1,178 @@
+.loginForm {
+    height: 650px;
+    width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: white;
+    border: solid 1px;
+    padding: 20px;
+
+}
+
+body {
+    background-color: red;
+
+}
+
+.nav-link {
+    z-index: 10000;
+    padding-left: 20px;
+    font-family: 'PT Serif', serif;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.rotateDiv {
+    background-color: #e74e93;
+    transform: skew(-20deg);
+    width: 20px;
+    position: absolute;
+    top: 78px;
+    left: 588px;
+    padding-left: 7px;
+    font-size: 20px;
+}
+
+form label {
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 0px;
+}
+
+.signupNow {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.signupNow a {
+    color: #e74e93;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.signinSocial {
+
+    font-size: 15px;
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.Social a {
+    background-color: rgb(66, 132, 244);
+    color: white;
+    padding: 6px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.Google {
+    font-size: 15px;
+    padding: 5px;
+    color: #0e76a8;
+    font-weight: 700;
+}
+
+.linkedIn {
+    font-size: 15px;
+    padding: 5px;
+    color: #0e76a8;
+    font-weight: 700;
+}
+
+.form input {
+
+    text-transform: lowercase;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    border-bottom: solid 1px #9e9e9e;
+    width: 100%;
+    font-size: 15px;
+    padding: 5px;
+}
+
+#email {
+    text-transform: lowercase;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    border-bottom: solid 1px #9e9e9e;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+
+}
+
+#pass {
+    text-transform: lowercase;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    border-bottom: solid 1px #9e9e9e;
+    width: 100%;
+    font-size: 15px;
+    padding: 5px;
+
+}
+
+form button {
+
+    padding: 15px 15px 15px 15px;
+    border-radius: 50px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff514e;
+    text-align: center;
+    letter-spacing: .5px;
+    cursor: pointer;
+    line-height: 35px;
+}
+
+.paragraphs>p:first-of-type {
+
+    color: #17324e !important;
+    font-family: Arvo !important;
+    font-size: 30px !important;
+    letter-spacing: -1px !important;
+    line-height: 20px !important;
+    padding: 0px 0px;
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: 400px;
+    height: 10px;
+}
+
+
+.secondPar {
+    color: #00bf96;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 30px;
+    width: 100%;
+    margin-top: 0px;
+    padding-left: 0px;
+    font-weight: 100px;
+
+}
+
+.firstPar {
+    color: #17324e !important;
+    font-family: Arvo !important;
+    font-size: 30px !important;
+    letter-spacing: -1px !important;
+    line-height: 20px !important;
+    padding: 0px 0px;
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: 400px;
+    height: 10px;
+}

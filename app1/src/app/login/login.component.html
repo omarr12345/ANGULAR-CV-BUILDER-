@@ -1,0 +1,94 @@
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Abel|Montserrat|PT+Serif|Roboto&display=swap" rel="stylesheet">
+</head>
+<div class="loginForm">
+
+    <a href="#tab1Id" class="nav-link active"><span>Resume</span><span style='color:fuchsia;'>Coach.com</span></a>
+    <div class="rotateDiv">
+        R
+    </div>
+
+    <div>
+        <p class="firstPar">Login :</p>
+
+        <p class="secondPar">Instantly start building your professional profile
+
+        </p>
+    </div>
+
+    <form [formGroup]='loginForm' (ngSubmit)="onSubmit()" method="get">
+
+
+
+
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <label for="sign-in-email-label" class="active">E-mail address</label>
+
+                <input required formControlName="Email" name="email" type="email" autocapitalize="none" value=""
+                    id="email" class="form-control">
+
+                <small *ngIf="loginForm.get('Email').hasError('required')&&loginForm.get('Email').touched">*Email Is
+                    Required* </small>
+
+                <small *ngIf="loginForm.get('Email').hasError('maxlength')">*MaxLength:30 Characters*</small>
+
+
+
+            </div>
+
+            <div class="col-md-12">
+
+                <label for="Password-label" class="active">Password</label>
+
+                <input required formControlName="Password" name="Password" type="password" class="setPass"
+                    autocapitalize="none" value="" id="pass">
+
+                <small *ngIf="loginForm.get('Password').hasError('required')&&loginForm.get('Password').touched">*Email
+                    Is Required* </small>
+
+            </div>
+            <div class="col-md-6">
+                <input type="checkbox" style="float: left ;margin-top: 6px;" name="rememberME" />
+                <label style=" font-size: 15px; ">Remember Me</label>
+
+            </div>
+
+            <div class="col-md-6">
+                <a style="color: #ff514e; ;float:right; font-size:15px; text-decoration: none;" href="#">Forgot
+                    Password</a>
+            </div>
+
+            <div class="col-md-12" style="text-align: center;">
+
+                <div><button type="submit">Login
+                        to Resume
+                        Coach</button> </div>
+
+
+                <p class="signupNow">New To ResumeCoach? <a href="#">SignUp..</a></p>
+                <p class="signinSocial">Sign in With Social Network</p>
+                <div class="Social">
+
+                    <span><a><i class="fab fa-google-plus-g"></i></a></span>
+                    <span class="Google">
+                        Google
+                    </span>
+                    <span><a><i class="fab fa-linkedin-in"></i></a></span>
+                    <span class="linkedIn">
+                        Linked in
+                    </span>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </form>
+
+</div>

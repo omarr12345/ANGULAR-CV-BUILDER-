@@ -1,0 +1,461 @@
+.body {
+  overflow: hidden;
+
+}
+
+.nav {
+  height: 70px;
+  background: #26a0f4;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  z-index: 100000000;
+}
+
+
+
+.nav-item {
+  margin: 15px 0px 15px 100px;
+  transform: scaleY(1.5) skew(-25deg);
+  font-family: "PT Serif", serif;
+  font-size: 20px;
+}
+
+.rotateDiv {
+  background-color: #e74e93;
+  transform: skew(-25deg);
+  width: 20px;
+  position: absolute;
+  top: 25px;
+  left: 115px;
+  padding-left: 7px;
+  font-size: 20px;
+  padding-left: 5px;
+  padding-top: 1px;
+}
+
+.nav-link {
+  z-index: 10000;
+  padding-left: 20px;
+  font-family: "PT Serif", serif;
+}
+
+.Login {
+  transform: scaleY(1.3);
+  position: absolute;
+  top: 25px;
+  left: 70%;
+  font-weight: bold;
+  transition: all 1s;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.Login a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.Signup a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav li a {
+  transition: all 1s;
+}
+
+.nav li a:hover {
+  top: 100px;
+  color: #e74e93;
+  cursor: pointer;
+}
+
+.Signup {
+  transform: scaleY(1.5);
+  position: absolute;
+  top: 25px;
+  left: 80%;
+  font-weight: bold;
+
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.CoverLetters {
+  transform: scaleY(1.5);
+  position: absolute;
+  top: 25px;
+  left: 90%;
+  font-weight: bold;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.CoverLetters a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.top-panel {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(240, 243, 245);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  z-index: 10000000;
+}
+
+.status {
+  color: gray;
+  padding-top: 5px;
+  padding-left: 100px;
+}
+
+.status input {
+  color: gray;
+  font-weight: 500;
+  background: none;
+  border: none;
+  font-size: 24px;
+}
+
+.status i {
+  font-size: 17px;
+}
+
+.zoom {
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  display: inline;
+  margin-left: 30px;
+}
+
+.zoom i {
+  border: solid 1px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.Saved {
+  padding: 10px 10px;
+  font-family: "Black Han Sans", sans-serif;
+  text-align: center;
+  margin-left: 100px;
+  font-size: 15px;
+  color: rgb(23, 158, 247);
+}
+
+.Saved i {
+  display: inline;
+}
+
+.Saved p {
+  display: inline;
+}
+
+.displayinline {
+  display: inline;
+}
+
+.displayinlineblock {
+  display: inline-block;
+}
+
+.linkedit_1 {
+  margin: 15px;
+  padding: 10px 32px;
+  border-radius: 24px;
+  font-size: 13px;
+  font-family: "Black Han Sans", sans-serif;
+  border: solid 1px;
+  background-color: #e74e93;
+  transition: all 1s;
+}
+
+.linkedit_2 {
+  margin: 15px;
+  padding: 10px 32px;
+  border-radius: 24px;
+  font-size: 13px;
+  font-family: "Black Han Sans", sans-serif;
+  border: solid 1px #0042a0;
+}
+
+.linkedit_1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.linkedit_2 a {
+  text-decoration: none;
+  color: #0042a0;
+}
+
+.linkedit_1:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.cvDetails {
+  background-color: rgb(240, 243, 245);
+  height: 505px;
+}
+
+body {
+  background-color: red;
+}
+
+.CvChoices {
+  border-right: solid 1px rgba(0, 0, 0, 0.12);
+  height: 505px;
+}
+
+.LeftOuter {
+  border-right: solid 1px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  padding-top: 25px;
+  font-size: 13px;
+  color: #535360;
+  font-family: "Roboto", sans-serif;
+  height: 505px;
+  padding-right: 5px;
+}
+
+.LeftOuter i {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.LeftOuter div:hover {
+  cursor: pointer;
+}
+
+.cvTemplate {
+  margin: 25px 50px 100px 50px;
+  background-color: white;
+  padding: 10px 50px 50px;
+}
+
+.cv {
+  background-color: #535360;
+  height: 500px;
+  overflow: scroll;
+}
+
+.personalData {
+  border-bottom: dotted 1px gray;
+  padding: 16px 5px 0px 5px;
+  margin: 16px 0px 0px;
+}
+
+.personalData h4 {
+  color: rgb(23, 158, 247);
+}
+
+.personalData h6 {
+  color: rgb(23, 158, 247);
+}
+
+.personalData h5 {
+  color: rgb(23, 158, 247);
+}
+
+.Subtitles {
+  font-size: 11px;
+  text-align: right;
+}
+
+.Data:hover {
+  border: solid 1px red;
+}
+
+.Objective:hover {
+  border: solid 1px red;
+}
+
+.Experience:hover {
+  border: solid 1px red;
+}
+
+.Skills:hover {
+  border: solid 1px red;
+}
+
+.Education:hover {
+  border: solid 1px red;
+}
+
+.Title {
+  color: rgb(23, 158, 247);
+  text-align: center;
+}
+
+@media screen and (max-width: 1025px) and (min-width: 769px) {
+  .nav {
+    width: 100%;
+  }
+
+  .Login {
+    left: 60%;
+  }
+
+  .Signup {
+    left: 70%;
+  }
+
+  .CoverLetters {
+    left: 80%;
+  }
+
+  .top-panel {
+    height: 70px;
+  }
+
+  .status {
+    padding-left: 70px;
+  }
+
+  .zoom {
+    margin-left: 0px;
+  }
+
+  .Saved {
+    margin-left: 0px;
+  }
+
+  .status input {
+    font-size: 18px;
+  }
+
+  .status small {
+    font-size: 9px;
+  }
+
+  .linkedit_1 {
+    padding: 5px 10px;
+  }
+
+  .linkedit_2 {
+    padding: 5px 10px;
+  }
+
+  .LeftOuter p {
+    font-size: 11px;
+  }
+
+  .Title {}
+}
+
+@media screen and (max-width: 769px) and (min-width: 425px) {
+  .nav {
+    width: 100%;
+    height: 50px;
+  }
+
+  .Login {
+    left: 55%;
+    font-size: 12px;
+  }
+
+  .Signup {
+    left: 65%;
+    font-size: 12px;
+  }
+
+  .CoverLetters {
+    left: 75%;
+
+    font-size: 12px;
+  }
+
+  .nav-link {
+    font-size: 15px;
+    padding-left: 10px;
+  }
+
+  .rotateDiv {
+    font-size: 15px;
+    width: 15px;
+    height: 20px;
+    left: 106px;
+    padding-right: 3px;
+  }
+
+  .top-panel {
+    height: 70px;
+  }
+
+  .status {
+    padding-left: 20px;
+  }
+
+  .zoom {
+    margin-left: 0px;
+    width: 120px;
+  }
+
+  .zoom p {
+    font-size: 10px;
+  }
+
+  #Download a {
+    font-size: 10px;
+  }
+
+  .linkedit_2 a {
+    font-size: 9px;
+  }
+
+  .Saved {
+    margin-left: 0px;
+    font-size: 10px;
+  }
+
+  .status input {
+    font-size: 15px;
+  }
+
+  .status i {
+    font-size: 10px;
+  }
+
+  .status small {
+    font-size: 9px;
+  }
+
+  #Plus {
+    padding: 5px;
+  }
+
+  #Minus {
+    padding: 5px;
+  }
+
+  .linkedit_1 {
+    padding: 3px 15px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .linkedit_2 {
+    padding: 3px 15px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .LeftOuter p {
+    font-size: 11px;
+  }
+
+  .Title {
+
+    font-size: 15px;
+  }
+
+  .cv {
+    padding: 0px;
+  }
+
+  .cvTemplate {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}

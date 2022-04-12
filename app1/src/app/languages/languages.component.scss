@@ -1,0 +1,38 @@
+.languageDetails h5 {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.Languages {
+    padding: 20px;
+    background-color: white;
+    border-bottom: 1px;
+
+}
+
+.Languages span {
+
+    font-family: 18px;
+    color: #26a0f4;
+    font-weight: 500;
+
+}
+
+.Languages div {
+
+    border-bottom: solid 1px #e0e0e0;
+    padding: 5px;
+
+}
+
+
+.Languages input {
+    float: right;
+    margin-top: 9px;
+    color: red;
+}
+
+.languageDetails {
+    overflow: scroll;
+    height: 500px;
+}

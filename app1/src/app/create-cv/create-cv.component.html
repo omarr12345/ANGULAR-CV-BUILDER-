@@ -1,0 +1,446 @@
+<!-- Nav tabs -->
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Roboto|Roboto+Condensed|Roboto+Slab&display=swap"
+        rel="stylesheet">
+
+
+
+
+</head>
+
+
+
+
+<section class="NB">
+    <ul class="nav nav-tabs" id="navId">
+
+        <li class="nav-item">
+            <a href="#tab1Id" class="nav-link "><span style="color: #fff;">Resume</span><span
+                    style='color:fuchsia;'>Coach.com</span></a>
+        </li>
+
+        <li class="Login">
+            <a routerLink="/Dashboard">Dashboard</a>
+        </li>
+
+        <li class="Signup">
+            <a routerLink="/Resume">Resumes</a>
+        </li>
+
+        <li class="CoverLetters">
+            <a routerLink="/Coverletters">CoverLetters</a>
+        </li>
+
+        <div class="rotateDiv">
+            R
+
+
+        </div>
+
+
+    </ul>
+
+</section>
+
+<div class="top-panel">
+
+    <div class="container-fluid">
+        <div class="row">
+
+
+            <div class="col-md-4 col-sm-3 col-xs-1">
+
+                <div class="status">
+                    <div>
+                        <i class="fas fa-pencil-alt"></i>
+
+                        <input value="Untitled Resume">
+
+                    </div>
+
+                    <small>Updated on December 29 2019 at 10:56 AM</small>
+
+                </div>
+            </div>
+
+
+            <div class="col-md-8 ">
+
+
+                <div class="zoom displayinline">
+                    <i class="fas fa-plus" id="Plus"></i>
+                    &nbsp;
+
+                    Zoom 100%
+
+                    &nbsp;
+                    <i class="fas fa-minus" id="Minus"></i>
+                </div>
+
+
+
+                <div class="displayinlineblock Saved">
+
+                    <i class="fas fa-check"></i>
+                    &nbsp;
+                    <p>Saved</p>
+
+                </div>
+
+
+                <div id="Download" class="displayinlineblock linkedit_1">
+
+                    <a>Downlad your resume</a>
+
+                </div>
+
+                <div class="displayinlineblock linkedit_2 ">
+
+                    <a>Share it online</a>
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<section class="cvDetails">
+
+
+
+
+    <div class="row">
+
+
+        <div class="col-md-5 CvChoices">
+
+
+            <div class="row">
+
+                <div class="col-lg-2 col-md-4 LeftOuter">
+
+
+                    <div (click)="assignComponent('templates')">
+
+
+                        <i class="fas fa-archive"></i>
+
+
+                        <p>Template</p>
+
+
+                    </div>
+                    <br>
+
+
+                    <div (click)="assignComponent('sections')">
+
+                        <i class="fas fa-puzzle-piece"></i>
+                        <p>Sections</p>
+
+
+                    </div>
+                    <br>
+
+
+                    <div (click)="assignComponent('languages')">
+
+
+                        <i class="fas fa-language"></i>
+                        <p>Languages</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-10 col-md-8 ">
+                    <div>
+                        <form [formGroup]="personalDataForm">
+                            <ng-container *ngComponentOutlet="DummyComponent"></ng-container>
+
+                        </form>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="col-md-7 cv">
+
+            <div class="cvTemplate" id="Template">
+
+
+                <h5 class="Title"> CV</h5>
+
+                <div class="personalData Data" (click)="assignComponent('data')">
+
+
+
+
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+
+
+
+
+                            <div>
+                                {{ this.personalDataForm.controls.data.get("profileImg").value}}
+                            </div>
+
+
+
+                            <h6 style="word-wrap: break-word;">
+                                {{ this.personalDataForm.controls.data.get("Fname").value }}</h6>
+
+
+                        </div>
+
+                        <div class="col-md-6 Subtitles">
+
+
+                            <p style="
+                            padding : 0;
+                            margin : 0;
+                            line-height : 20px; word-wrap: break-word;">
+                                {{ this.personalDataForm.controls.data.get("Phone").value }}
+                            </p>
+
+                            <p style="padding : 0; margin : 0; line-height : 20px; word-wrap: break-word;">
+                                {{ this.personalDataForm.controls.data.get("Email").value }}
+                            </p>
+                            <p style="word-wrap: break-word;">
+
+                                {{ this.personalDataForm.controls.data.get("Address").value }}
+                            </p>
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="personalData Objective" (click)="assignComponent('objective')">
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <h6>Objective</h6>
+                        </div>
+
+                        <div class="col-md-6 Subtitles">
+
+
+                            <p style="word-wrap: break-word;">
+                                {{ this.personalDataForm.controls.Objective.get("Message").value }}</p>
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+
+
+
+                <div class=" personalData Experience" (click)="assignComponent('experience')">
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <h6>Experience</h6>
+
+
+                            <p
+                                style="word-wrap: break-word;font-size: 11px; font-style: italic; padding : 0; margin : 0; line-height : 20px;font-weight: bold;">
+
+                                {{ personalDataForm.controls.Experience.get("Place").value }}
+
+                            </p>
+                            <p style="word-wrap: break-word;font-size: 11px; font-style: italic;font-weight: bold;">
+                                {{ personalDataForm.controls.Experience.get("Time").value }}</p>
+                        </div>
+
+                        <div class="col-md-6 Subtitles" style="word-wrap: break-word;">
+
+                            <h6> {{ personalDataForm.controls.Experience.get("Title").value }}</h6>
+
+                            <p> {{ personalDataForm.controls.Experience.get("Typeofex").value }}
+
+                            </p>
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="personalData Education" (click)="assignComponent('education')">
+
+                    <div class=" row">
+
+                        <div class="col-md-6">
+                            <h6>Education</h6>
+                        </div>
+
+                        <div class="col-md-6 Subtitles " style="word-wrap: break-word;">
+
+
+                            <h6>{{ personalDataForm.controls.Education.get("Title").value }}</h6>
+                            <p style="font-weight:bold; padding : 0; margin : 0; line-height : 20px;">
+                                {{ personalDataForm.controls.Education.get("Place").value }}</p>
+                            <p>{{ personalDataForm.controls.Education.get("Discuss").value }}</p>
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="personalData Skills" (click)="assignComponent('skillsandlanguages')">
+
+                    <div class="row">
+
+                        <div class="col-md-8">
+                            <h6>Skills</h6>
+                            <ul style="text-align: left;">
+                                <li>
+                                    <p
+                                        style="word-wrap: break-word;font-size: 11px; font-style: italic;font-weight: bold;">
+                                        {{ personalDataForm.controls.SAL.get("Skill1").value }}</p>
+                                </li>
+
+                                <li>
+                                    <p
+                                        style="word-wrap: break-word;font-size: 11px; font-style: italic;font-weight: bold;">
+                                        {{ personalDataForm.controls.SAL.get("Skill2").value }}</p>
+                                </li>
+
+                                <li>
+                                    <p
+                                        style=" word-wrap: break-word;font-size: 11px; font-style: italic;font-weight: bold;">
+                                        {{ personalDataForm.controls.SAL.get("Skill3").value }}</p>
+                                </li>
+
+                                <li>
+                                    <p
+                                        style=" word-wrap: break-word;font-size: 11px; font-style: italic;font-weight: bold;">
+                                        {{ personalDataForm.controls.SAL.get("Skill4").value }}</p>
+                                </li>
+
+
+                                <li>
+                                    <p
+                                        style=" word-wrap: break-word;font-size: 11px; font-style: italic;font-weight: bold;">
+                                        {{ personalDataForm.controls.SAL.get("Skill5").value }}</p>
+                                </li>
+
+
+
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 Subtitles" style="text-align: left;">
+
+
+                            <h6>Languages</h6>
+                            <ul>
+                                <li>
+                                    <p
+                                        style=" word-wrap: break-word;font-size: 11px; font-style: italic;font-weight: bold;">
+                                        {{ personalDataForm.controls.SAL.get("Lang1").value }}</p>
+                                </li>
+                                <li>
+                                    <p
+                                        style=" word-wrap: break-word;font-size: 11px; font-style: italic;font-weight: bold;">
+                                        {{ personalDataForm.controls.SAL.get("Lang2").value }}</p>
+                                </li>
+
+                                <li>
+                                    <p
+                                        style=" word-wrap: break-word;font-size: 11px; font-style: italic;font-weight: bold;">
+                                        {{ personalDataForm.controls.SAL.get("Lang3").value }}</p>
+                                </li>
+
+                                <li>
+                                    <p
+                                        style="word-wrap: break-word;font-size: 11px; font-style: italic;font-weight: bold;">
+                                        {{ personalDataForm.controls.SAL.get("Lang4").value }}</p>
+                                </li>
+
+
+                                <li>
+                                    <p
+                                        style="word-wrap: break-word;font-size: 11px; font-style: italic;font-weight: bold;">
+                                        {{ personalDataForm.controls.SAL.get("Lang5").value }}</p>
+                                </li>
+
+                            </ul>
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+            <div id="editor"></div>
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+</section>
